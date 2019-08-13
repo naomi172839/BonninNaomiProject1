@@ -4,13 +4,15 @@
 // Course: CMIS 242 6383
 // Project Name: Project 1 (Employee Salary)
 // Filename: Salesman.java
-// Updated: 8/13/19, 4:18 AM
+// Updated: 8/13/19, 5:00 AM
 // Description: This program loads information about employees from a " " delimited text file.
 // It then sorts and displays that information in the console.
 // Finally, it calculates and displays the average salaries for each year.
 ////////////////////////////////////////////////////////////////////////////////
 
 package edu.bonnin.projectone;
+
+import org.jetbrains.annotations.Contract;
 
 /*
 The Salesman subclass extends the Employee superclass by adding the annual salesVariable.
@@ -26,7 +28,7 @@ class Salesman extends Employee {
 
     //Default constructor.  Salary and annual sales should never be negative in a correctly
     //instantiated Salesman object.
-    public Salesman() {
+    Salesman() {
         super();
         this.setAnnualSales(-1);
     }
@@ -38,10 +40,12 @@ class Salesman extends Employee {
         this.setAnnualSales(annualSales);
     }
 
+    @Contract(pure = true)
     private static double getCommissionAmount() {
         return COMMISSION_AMOUNT;
     }
 
+    @Contract(pure = true)
     private static double getMaximumCommission() {
         return MAXIMUM_COMMISSION;
     }

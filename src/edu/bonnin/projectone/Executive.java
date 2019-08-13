@@ -4,7 +4,7 @@
 // Course: CMIS 242 6383
 // Project Name: Project 1 (Employee Salary)
 // Filename: Executive.java
-// Updated: 8/13/19, 4:18 AM
+// Updated: 8/13/19, 5:00 AM
 // Description: This program loads information about employees from a " " delimited text file.
 // It then sorts and displays that information in the console.
 // Finally, it calculates and displays the average salaries for each year.
@@ -27,7 +27,7 @@ class Executive extends Employee {
 
     //Default constructor.  Salary and stockPrice should never be negative in a properly instantiated
     //Executive object.
-    public Executive() {
+    Executive() {
         super();
         this.setStockPrice(-1);
     }

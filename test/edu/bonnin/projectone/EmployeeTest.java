@@ -4,7 +4,7 @@
 // Course: CMIS 242 6383
 // Project Name: Project 1 (Employee Salary)
 // Filename: EmployeeTest.java
-// Updated: 8/13/19, 4:18 AM
+// Updated: 8/13/19, 5:00 AM
 // Description: This program loads information about employees from a " " delimited text file.
 // It then sorts and displays that information in the console.
 // Finally, it calculates and displays the average salaries for each year.
@@ -68,5 +68,23 @@ class EmployeeTest {
         Employee tester = new Employee("John", 2000, 2014);
         String testString = "Name: John, Monthly Salary: $2000";
         assertEquals(testString, tester.toString(), "String must match");
+    }
+
+    @Test
+    void testDefaultSalary() {
+        Employee tester = new Employee();
+        assertEquals(-1, tester.getSalary(), "Salary must equal -1");
+    }
+
+    @Test
+    void testDefaultYear() {
+        Employee tester = new Employee();
+        assertEquals(-1, tester.getYear(), "Year must equal -1");
+    }
+
+    @Test
+    void testDefaultName() {
+        Employee tester = new Employee();
+        assertEquals("Uninitialized", tester.getName(), "Name must be same");
     }
 }
