@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="Copyright (c) &amp;#36;today.year. &#10;Author: &amp;#36;username&#10;Course: CMIS 242 6383&#10;Project Name: Project 1 (Employee Salary)&#10;Filename: &amp;#36;file.fileName&#10;Updated: &amp;#36;today&#10;Description: This program loads information about employees from a &quot; &quot; delimited text file. &#10;It then sorts and displays that information in the console.  &#10;Finally, it calculates and displays the average salaries for each year." />
+    <option name="myName" value="Header" />
+  </copyright>
+</component>
