@@ -69,6 +69,9 @@ public class Main {
                     fifteenCount++;
                     System.out.print("Year: " + current.getYear() + " ");
                     break;
+
+                default:
+                    System.out.println("Year out of Range!");
             }
             System.out.println(current.toString() + ", Annual Salary: $" + current.annualSalary());
         }
