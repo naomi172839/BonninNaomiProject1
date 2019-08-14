@@ -4,7 +4,7 @@
 // Course: CMIS 242 6383
 // Project Name: Project 1 (Employee Salary)
 // Filename: Main.java
-// Updated: 8/13/19, 5:01 AM
+// Updated: 8/13/19, 11:30 PM
 // Description: This program loads information about employees from a " " delimited text file.
 // It then sorts and displays that information in the console.
 // Finally, it calculates and displays the average salaries for each year.
@@ -64,13 +64,13 @@ public class Main {
                 case 2014:
                     fourteenTotal += current.annualSalary();
                     fourteenCount++;
-                    System.out.print("Year: " + current.getYear() + " ");
+                    System.out.print("Year: " + current.getYear() + ", ");
                     break;
 
                 case 2015:
                     fifteenTotal += current.annualSalary();
                     fifteenCount++;
-                    System.out.print("Year: " + current.getYear() + " ");
+                    System.out.print("Year: " + current.getYear() + ", ");
                     break;
 
                 default:
