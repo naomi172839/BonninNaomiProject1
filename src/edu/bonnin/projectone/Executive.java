@@ -4,7 +4,7 @@
 // Course: CMIS 242 6383
 // Project Name: Project 1 (Employee Salary)
 // Filename: Executive.java
-// Updated: 8/14/19, 2:08 PM
+// Updated: 8/23/19, 11:53 AM
 // Description: This program loads information about employees from a " " delimited text file.
 // It then sorts and displays that information in the console.
 // Finally, it calculates and displays the average salaries for each year.
@@ -23,12 +23,14 @@ class Executive extends Employee {
 
     private final static int BONUS_THRESHOLD = 50; //The threshold at which an executive would get a bonus
     private final static int BONUS_AMOUNT = 30000; //The specified bonus amount
+    private final static String EMPLOYEE_TYPE = "Executive";
     private int stockPrice;
 
     //Default constructor.  Salary and stockPrice should never be negative in a properly instantiated
     //Executive object.
     Executive() {
         super();
+        super.setType(EMPLOYEE_TYPE);
         this.setStockPrice(-1);
     }
 
@@ -36,6 +38,7 @@ class Executive extends Employee {
     //super keyword to reference the superclass variables.
     Executive(String name, int salary, int stockPrice, int year) {
         super(name, salary, year);
+        super.setType(EMPLOYEE_TYPE);
         this.setStockPrice(stockPrice);
     }
 

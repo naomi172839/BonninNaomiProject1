@@ -1,13 +1,14 @@
 2014 Employee Smith,John 2000
 2015 Salesman Jones,Bill 3000 100000
-2014 Executive Bush,George 5000 552014 Employee Obama,Barak 2500
+2014 Executive Bush,George 5000 55
+2014 Employee Obama,Barak 2500
 2014 Employee Trump,Donald 1000
 2015 Salesman Gentry,Christine 3500 150000
 2015 Executive Gordge,Kelles 5500 40
 2015 Employee Bonnin,Naomi 2500
 2014 Executive Parker,Miranda 4500 75
 2014 Executive Lim,Vanessa 3000 50
-2014 Salesman Smith,Brooke 4000 1000000
+2014 Salesman Smith,Brooke 4000 1000
 2014 Salesman O'Niel,Molly 4500 200
 2015 Employee Nichols,Meridith 1500
 2014 Executive Bonnin,Elphaba 9000 40
@@ -15,5 +16,5 @@
 2015 Employee Bonnin,Nessarose 3000
 2015 Employee Smith,Daisy 3500
 2015 Salesman Johnson,Jessica 4000 150000
-2015 Executive Johnson,Simba 6000 40
+2015 Executive Johnson,Simba 6000 50
 2015 Employee James,Johnny 1350

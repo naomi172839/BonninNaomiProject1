@@ -4,7 +4,7 @@
 // Course: CMIS 242 6383
 // Project Name: Project 1 (Employee Salary)
 // Filename: ExecutiveTest.java
-// Updated: 8/14/19, 2:08 PM
+// Updated: 8/23/19, 11:53 AM
 // Description: This program loads information about employees from a " " delimited text file.
 // It then sorts and displays that information in the console.
 // Finally, it calculates and displays the average salaries for each year.
@@ -42,7 +42,7 @@ class ExecutiveTest {
     @Test
     void testToString() {
         Executive tester = new Executive("John", 10000, 75, 2014);
-        String testString = "Name: John, Monthly Salary: $10000, Stock Price: $75";
+        String testString = "Name: John, Employee Type: Executive, Monthly Salary: $10000, Stock Price: $75";
         assertEquals(testString, tester.toString(), "Strings must be equal");
     }
 

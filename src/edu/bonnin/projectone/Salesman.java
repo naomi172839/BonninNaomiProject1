@@ -4,7 +4,7 @@
 // Course: CMIS 242 6383
 // Project Name: Project 1 (Employee Salary)
 // Filename: Salesman.java
-// Updated: 8/14/19, 2:08 PM
+// Updated: 8/23/19, 11:53 AM
 // Description: This program loads information about employees from a " " delimited text file.
 // It then sorts and displays that information in the console.
 // Finally, it calculates and displays the average salaries for each year.
@@ -24,12 +24,14 @@ class Salesman extends Employee {
 
     private final static double COMMISSION_AMOUNT = 0.02;  //The percentage that a commission is
     private final static double MAXIMUM_COMMISSION = 20000.0; //The maximum allowable commission
+    private final static String EMPLOYEE_TYPE = "Salesman";
     private int annualSales;
 
     //Default constructor.  Salary and annual sales should never be negative in a correctly
     //instantiated Salesman object.
     Salesman() {
         super();
+        super.setType(EMPLOYEE_TYPE);
         this.setAnnualSales(-1);
     }
 
@@ -37,6 +39,7 @@ class Salesman extends Employee {
     //to reference superclass variables.
     Salesman(String name, int salary, int annualSales, int year) {
         super(name, salary, year);
+        super.setType(EMPLOYEE_TYPE);
         this.setAnnualSales(annualSales);
     }
 

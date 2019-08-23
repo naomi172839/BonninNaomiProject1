@@ -4,7 +4,7 @@
 // Course: CMIS 242 6383
 // Project Name: Project 1 (Employee Salary)
 // Filename: Employee.java
-// Updated: 8/14/19, 2:08 PM
+// Updated: 8/23/19, 11:53 AM
 // Description: This program loads information about employees from a " " delimited text file.
 // It then sorts and displays that information in the console.
 // Finally, it calculates and displays the average salaries for each year.
@@ -26,8 +26,10 @@ The year is also tracked for later use.
 class Employee implements Comparable<Employee> {
 
     private final static int MONTH_IN_YEAR = 12;  //There are 12 months in a year.  Change for other planets
+    private final static String EMPLOYEE_TYPE = "Employee";
     private int salary;
     private String name;
+    private String type;
     private int year;
 
     //Default constructor, allows for flexibility when creating new objects
@@ -38,6 +40,7 @@ class Employee implements Comparable<Employee> {
         this.setName("Uninitialized");
         this.setSalary(-1);
         this.setYear(-1);
+        this.setType(EMPLOYEE_TYPE);
     }
 
     //Standard constructor, allows instantiation using 2 arguments, name and salary
@@ -46,6 +49,7 @@ class Employee implements Comparable<Employee> {
         this.setName(name);
         this.setSalary(salary);
         this.setYear(year);
+        this.setType(EMPLOYEE_TYPE);
     }
 
     @Contract(pure = true)
@@ -83,6 +87,15 @@ class Employee implements Comparable<Employee> {
         this.year = year;
     }
 
+    @Contract(pure = true)
+    private String getType() {
+        return this.type;
+    }
+
+    void setType(String type) {
+        this.type = type;
+    }
+
     //Returns the annual salary of the employee by multiplying the monthly salary and total months
     public int annualSalary() {
         return this.getSalary() * getMonthInYear();
@@ -90,7 +103,7 @@ class Employee implements Comparable<Employee> {
 
     //Override the Java default toString method and returns the name and monthly salary.  Unformatted.
     public String toString() {
-        return "Name: " + this.getName() + ", Monthly Salary: $" + this.getSalary();
+        return "Name: " + this.getName() + ", Employee Type: " + this.getType() + ", Monthly Salary: $" + this.getSalary();
     }
 
     @Override
